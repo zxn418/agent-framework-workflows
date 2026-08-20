@@ -1,0 +1,14 @@
+[project]
+name = "multi-agent-workflow"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "agent-framework-devui>=1.0.0b260813",
+    "agent-framework-openai>=1.13.0",
+    "agent-framework-orchestrations>=1.1.0",
+    "pyodbc>=5.3.0",
+    "python-dotenv>=1.2.3",
+    "sqlalchemy>=2.0.52",
+]
