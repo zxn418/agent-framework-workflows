@@ -1,6 +1,6 @@
-# Agent Framework Workflows
+# Multi-Agent Workflow Project
 
-A multi-agent workflow project built with Python and Microsoft Agent Framework.
+A practical multi-agent AI project built with Python and Microsoft Agent Framework.
 
 This project demonstrates three different multi-agent workflow patterns:
 
@@ -8,21 +8,57 @@ This project demonstrates three different multi-agent workflow patterns:
 - Concurrent Workflow
 - Handoff Workflow
 
-The Handoff workflow is connected to a local SQL Server database and uses multiple specialized agents to answer customer enquiries.
+The project also demonstrates how AI agents can interact with a local SQL Server database using database tools.
 
 ---
 
-## Workflows
+## Project Overview
 
-### 1. Sequential Workflow
+The goal of this project is to explore how multiple AI agents can work together using different workflow patterns.
 
-The Sequential workflow executes agents in a specific order.
+The project includes:
 
-Example:
+1. **Sequential Workflow** – agents execute one after another in a predefined order.
+2. **Concurrent Workflow** – multiple agents execute tasks simultaneously.
+3. **Handoff Workflow** – a router agent sends the user's request to the appropriate specialized agent.
+4. **Database Integration** – specialized agents can retrieve real data from a local SQL Server database.
+5. **Agent Framework DevUI** – provides a user interface for testing and observing agent workflows.
+
+---
+
+# Technologies Used
+
+- Python
+- Microsoft Agent Framework
+- OpenAI
+- Agent Framework Core
+- Agent Framework Orchestrations
+- Agent Framework DevUI
+- SQL Server
+- SQLAlchemy
+- pyodbc
+- python-dotenv
+- uv
+
+---
+
+# Project Structure
 
 ```text
-Agent 1
-   ↓
-Agent 2
-   ↓
-Agent 3
+multi-agent-workflow/
+│
+├── .env
+├── .gitignore
+├── .python-version
+├── README.md
+├── pyproject.toml
+│
+├── main.py
+│
+├── agent_instructions.py
+├── db.py
+│
+├── seq-workflow.py
+├── concurrent-workflow.py
+├── enquiry_workflow.py
+└── translator-workflow.py
